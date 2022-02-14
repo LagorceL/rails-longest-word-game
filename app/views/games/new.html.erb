@@ -1,0 +1,15 @@
+  <h1>New Game</h1>
+<div class="container">
+  <ul id="letters">
+    <%@letters.each do |letter|%>
+      <li><%= letter %></li>
+    <% end %>
+  </ul>
+
+  <p>Type the longest word you can find</p>
+
+  <form action="/score" method="get">
+    <input id="text" type="text" name="word" placeholder="your word ?">
+    <input id="submit" type="submit">
+  </form>
+</div>
